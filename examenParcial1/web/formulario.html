@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Formulario de registro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h1>Formulario de registro</h1>
+            <p>Por favor, ingrese sus datos: </p>
+        </div>
+        
+        <form method="POST" action="registro.do">
+            <label for="name">Nombre: </label>
+            <input id ="name" type="text" name="user_name">
+            <br>
+            <label for="last_name">Apellidos: </label>
+            <input id ="last_name" type="text" name="user_lastName">
+            <br>
+            <label for="email">E-mail: </label>
+            <input id ="email" type="text" name="user_email">
+            <br>
+            <label for="phone">Teléfono: </label>
+            <input id ="phone" type="text" name="user_phone">
+            <br>
+            <label for="city">Ciudad: </label>
+            <input id ="city" type="text" name="user_city">
+            <br>
+            <label for="country">País: </label>
+            <input id ="country" type="text" name="user_country">
+            <br>
+            <label for="zipcode">Código postal: </label>
+            <input id ="zipcode" type="text" name="user_zipcode">
+            <br>
+            <br>
+            <p>Seleccione su tipo de boleto: </p>
+            <select name="tipo_boleto" size="1">
+                    <option value="Boleto General"> Boleto General </option>
+                    <option value="VIP"> Boleto VIP </option>
+                    <option value="Platino"> Boleto Platino </option>
+            </select>
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+        
+    </body>
+</html>

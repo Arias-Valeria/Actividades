@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+   <servlet>
+        <servlet-name>servBoletos</servlet-name>
+        <servlet-class>model.serv.servBoletos</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>servBoletos</servlet-name>
+        <url-pattern>/registro.do</url-pattern>
+    </servlet-mapping>
+    
+    <context-param>
+        <param-name>nombreEvento</param-name>
+        <param-value>Rockacola Festival</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>fechaEvento</param-name>
+        <param-value>23 de noviembre 2022</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>lugarEvento</param-name>
+        <param-value>Arena Ciudad de Mexico</param-value>
+    </context-param>
+
+</web-app>
